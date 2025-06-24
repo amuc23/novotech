@@ -1,1 +1,1 @@
-web: gunicorn tu_proyecto.wsgi
+web: gunicorn novotech.wsgi
