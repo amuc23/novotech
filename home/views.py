@@ -8,3 +8,6 @@ def contacto(request):
 
 def maquinas(request):
     return render(request, 'maquinas.html')
+
+def quienes_somos(request):
+    return render(request, 'quienes_somos.html')
