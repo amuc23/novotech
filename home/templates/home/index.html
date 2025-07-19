@@ -34,7 +34,7 @@
 <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav ms-auto nav-links">
     <li class="nav-item">
-      <a class="nav-link" href="{% url 'maquinas' %}">Máquinas</a>
+      <a class="nav-link" href="{% url 'maquinas' %}">Codificadoras/Insumos</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{% url 'contacto' %}">Contáctanos</a>
@@ -51,16 +51,17 @@
 
   <!-- Hero con logo grande -->
   <section class="hero">
-  <img src="{% static 'logo.png' %}" alt="Logo Novotech grande" class="logo-hero fade-in" />
+  <img src="{% static 'logo.png' %}" alt="Logo Novotech grande" class="logo-hero" />
   <h1 class="fade-in fade-delay-1">Soluciones Avanzadas de Codificación Industrial</h1>
   <p class="fade-in fade-delay-2">En NOVOTECH transformamos tus procesos productivos con tecnología de punta en codificación, trazabilidad y automatización. Tu industria, más eficiente y conectada.</p>
 </section>
 
-
-  <!-- Servicios -->
+<!-- Servicios -->
 <section id="servicios" class="container py-5">
   <h2 class="section-title fade-in">Servicios Especializados</h2>
   <div class="row g-4">
+
+    <!-- Codificación Industrial -->
     <div class="col-md-4 col-sm-6 col-12">
       <div class="card h-100 shadow-sm">
         <img src="https://tse3.mm.bing.net/th?id=OIP.Nq5sfOc4QJLerlG5VJIujgHaHa&pid=Api" class="card-img-top" alt="Codificación">
@@ -70,6 +71,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Etiquetado Automatizado -->
     <div class="col-md-4 col-sm-6 col-12">
       <div class="card h-100 shadow-sm">
         <img src="https://tse3.mm.bing.net/th?id=OIP.Gv1Z49scSYdLGkOzMdlWOwHaHa&pid=Api" class="card-img-top" alt="Etiquetado">
@@ -79,6 +82,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Software Personalizado -->
     <div class="col-md-4 col-sm-6 col-12">
       <div class="card h-100 shadow-sm">
         <img src="https://tse2.mm.bing.net/th?id=OIP.DvHVxhYZUjoo5Gn3t2ziVQHaHa&pid=Api" class="card-img-top" alt="Software">
@@ -88,8 +93,32 @@
         </div>
       </div>
     </div>
+
+    <!-- Servicio Técnico -->
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card h-100 shadow-sm">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZ4Pk3px8NBIfoqlVBKgorkx2DStGUw2yow&s" class="card-img-top" alt="Servicio Técnico">
+        <div class="card-body text-center">
+          <h3>Servicio Técnico</h3>
+          <p>Diagnóstico, mantenimiento y reparación de equipos de codificación. Atención en terreno y soporte remoto.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venta de Insumos -->
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card h-100 shadow-sm">
+        <img src="https://cdn-icons-png.flaticon.com/512/10963/10963565.png" class="card-img-top" alt="Venta de Insumos">
+        <div class="card-body text-center">
+          <h3>Venta de Insumos</h3>
+          <p>Suministro de tintas, disolventes y repuestos originales para impresoras y etiquetadoras industriales.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 
 
@@ -206,6 +235,33 @@
       <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
     </div>
   </div>
+
+  <!-- Máquina 3: Láser FiberJet X20 -->
+  <div class="row align-items-center my-5 fade-in fade-delay-2">
+    <div class="col-6">
+      <div id="carouselLaser" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.IR-oQQW53bs67iQbWlUCmAHaHa&pid=Api" class="d-block w-100 rounded" alt="Láser FiberJet X20">
+          </div>
+          <div class="carousel-item">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.Y7VXrE9JVgFxHfqByy1ljgHaEa&pid=Api" class="d-block w-100 rounded" alt="Láser FiberJet X20 extra">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaser" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaser" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <div class="col-6">
+      <h4>Láser FiberJet X20</h4>
+      <p>Equipo de codificación por láser de fibra para marcaje permanente sin consumibles. Precisión en líneas automatizadas con mínimo mantenimiento.</p>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
+    </div>
+  </div>
 </section>
 
  
@@ -223,4 +279,5 @@
 <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

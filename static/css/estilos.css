@@ -100,16 +100,22 @@ header img {
 
 /* Logo principal del Hero más grande y con efecto */
 .logo-hero {
-  max-height: 260px;
-  width: auto;
+  max-height: 200px;
+  width: 400px;
   margin-bottom: 20px;
-  transition: transform 0.3s ease;
+  animation: rotateOnce 1.2s ease forwards;
 }
 
-.logo-hero:hover {
-  transform: scale(1.05);
+@keyframes rotateOnce {
+  from {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
 }
-
 /* Títulos de secciones */
 .section-title {
   font-size: 2rem;
@@ -122,8 +128,11 @@ header img {
 /* Tarjetas */
 .card img {
   height: 180px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
+  background-color: #ffffff; /* fondo neutro para imágenes pequeñas */
 }
+
 
 .card h3 {
   color: #004d66;
