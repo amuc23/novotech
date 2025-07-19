@@ -1,0 +1,75 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección principal */
+.contact-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 50px 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  max-width: 900px;
+  margin: 160px auto;
+}
+
+.contact-section h2 {
+  color: #007a99;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+
+.contact-section li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section li i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: #007a99;
+}
+
+/* Imagen decorativa */
+.contact-image {
+  max-height: 180px;
+  margin-bottom: 20px;
+}
+
+/* Íconos redes sociales */
+.social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+  height: 32px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 20px;
+  }
+}

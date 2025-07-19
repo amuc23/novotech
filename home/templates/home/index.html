@@ -31,6 +31,17 @@
     </button>
 
     <!-- Enlaces del menú -->
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto nav-links">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'maquinas' %}">Máquinas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contacto' %}">Contáctanos</a>
+    </li>
+  </ul>
+</div>
+
     
 </nav>
 
@@ -77,21 +88,7 @@
   </div>
 </section>
 
- <!-- Proyectos -->
-<section id="proyectos" class="container py-5">
-  <h2 class="section-title fade-in">Proyectos Destacados</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-6 col-sm-10 col-12">
-      <div class="card shadow-sm">
-        <img src="https://tse2.mm.bing.net/th?id=OIP.pVbq5zFjhjChq-pyE6rmSgHaFj&pid=Api" class="card-img-top" alt="Proyecto">
-        <div class="card-body text-center">
-          <h3>Integración Total en Línea de Producción</h3>
-          <p>Sistema completo de etiquetado, lectura y control automático para planta embotelladora.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- Sectores atendidos -->
 <section id="sectores" class="container py-5">
@@ -146,31 +143,39 @@
   <h2 class="section-title fade-in">Máquinas de Codificación</h2>
 
     <!-- Máquina 1: CIJ Printer 9000 Series -->
-    <div class="row align-items-center my-5 fade-in fade-delay-1">
-        <div class="col-6">
-        <div id="carouselCIJ" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://tse1.mm.bing.net/th?id=OIP.E41zp0w2_ctIh7bOD_SCmwHaEo&pid=Api" class="d-block w-100 rounded" alt="CIJ Printer 9000">
-            </div>
-            <div class="carousel-item">
-                <img src="https://tse2.mm.bing.net/th?id=OIP.jXJjfHx169-qgHv8BxUfvQHaE8&pid=Api" class="d-block w-100 rounded" alt="CIJ Printer 9000 extra">
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCIJ" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCIJ" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            </button>
+<div class="row align-items-center my-5 fade-in fade-delay-1">
+  <!-- Carrusel de imágenes -->
+  <div class="col-6">
+    <div id="carouselCIJ" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'Cij1.jpg' %}" class="d-block w-100 rounded" alt="CIJ Printer 9000">
         </div>
+        <div class="carousel-item">
+          <img src="{% static 'Muestra.png' %}" class="d-block w-100 rounded" alt="CIJ Printer 9000 adicional">
         </div>
-        <div class="col-6">
-        <h4>CIJ Printer 9000 Series</h4>
-        <p>Impresora de inyección continua ideal para líneas de alta velocidad. Codificación en envases plásticos, vidrio y más. Tecnología eficiente para impresión sin contacto.</p>
-        <a href="#contacto" class="btn btn-outline-primary mt-2">Solicitar Información</a>
-        </div>
+      </div>
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCIJ" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCIJ" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
+  </div>
+
+  <!-- Información técnica -->
+  <div class="col-6">
+    <h4>Leadjet CIJ</h4>
+    <p>Impresora de inyección continua ideal para líneas de alta velocidad. Codificación en envases plásticos, vidrio y más. Tecnología eficiente para impresión sin contacto.</p>
+    <p><strong>Referencia técnica:</strong> Tecnología CIJ sin contacto. Alta velocidad y precisión para entornos industriales. Compatible con tinta base solvente y pigmentada. Ideal para alimentos, bebidas y farmacéutica.</p>
+    <a href="#contacto" class="btn btn-outline-primary mt-2">Solicitar Información</a>
+  </div>
+</div>
+
 
   <!-- Máquina 2: Láser FiberJet X20 -->
   <div class="row align-items-center my-5 fade-in fade-delay-2">
