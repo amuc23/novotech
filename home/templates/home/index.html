@@ -186,6 +186,12 @@
         <div class="carousel-item">
           <img src="{% static 'Muestra.png' %}" class="d-block w-100 rounded" alt="CIJ Printer 9000 adicional">
         </div>
+        <div class="carousel-item">
+          <img src="{% static 'Muestra2.png' %}" class="d-block w-100 rounded" alt="CIJ Printer 9000 adicional">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'Muestra3.png' %}" class="d-block w-100 rounded" alt="CIJ Printer 9000 adicional">
+        </div>
       </div>
       <!-- Controles del carrusel -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselCIJ" data-bs-slide="prev">
@@ -209,59 +215,88 @@
 </div>
 
 
-  <!-- Máquina 2: Láser FiberJet X20 -->
-  <div class="row align-items-center my-5 fade-in fade-delay-2">
-    <div class="col-6">
-      <div id="carouselLaser" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.IR-oQQW53bs67iQbWlUCmAHaHa&pid=Api" class="d-block w-100 rounded" alt="Láser FiberJet X20">
-          </div>
-          <div class="carousel-item">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.Y7VXrE9JVgFxHfqByy1ljgHaEa&pid=Api" class="d-block w-100 rounded" alt="Láser FiberJet X20 extra">
-          </div>
+  <!-- Máquina 2: Leadjet Fiber Laser Marking Machine - Flying -->
+<div class="row align-items-center my-5 fade-in fade-delay-2">
+  <!-- Carrusel de imágenes -->
+  <div class="col-6">
+    <div id="carouselLaser" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'laser.jpg' %}" class="d-block w-100 rounded" alt="Leadjet Fiber Laser Marking Machine">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaser" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaser" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <img src="{% static 'muestra_laser.png' %}" class="d-block w-100 rounded" alt="Leadjet Fiber Laser Marking Machine - Vista lateral">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'muestra_laser2.png' %}" class="d-block w-100 rounded" alt="Leadjet Fiber Laser Marking Machine - Vista lateral">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'muestra_laser3.png' %}" class="d-block w-100 rounded" alt="Leadjet Fiber Laser Marking Machine - Vista lateral">
+        </div>
       </div>
-    </div>
-    <div class="col-6">
-      <h4>Láser FiberJet X20</h4>
-      <p>Equipo de codificación por láser de fibra para marcaje permanente sin consumibles. Precisión en líneas automatizadas con mínimo mantenimiento.</p>
-      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaser" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselLaser" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
   </div>
 
-  <!-- Máquina 3: Láser FiberJet X20 -->
-  <div class="row align-items-center my-5 fade-in fade-delay-2">
-    <div class="col-6">
-      <div id="carouselLaser" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.IR-oQQW53bs67iQbWlUCmAHaHa&pid=Api" class="d-block w-100 rounded" alt="Láser FiberJet X20">
-          </div>
-          <div class="carousel-item">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.Y7VXrE9JVgFxHfqByy1ljgHaEa&pid=Api" class="d-block w-100 rounded" alt="Láser FiberJet X20 extra">
-          </div>
+  <!-- Información técnica -->
+  <div class="col-6">
+    <h4>Leadjet Fiber Laser Marking Machine - Flying</h4>
+    <p>Equipo de codificación láser de fibra óptica ideal para líneas de producción en movimiento. Tecnología avanzada para impresión sin contacto y sin consumibles.</p>
+    <p><strong>Referencia técnica:</strong> Tecnología láser de fibra, marcaje permanente, alta precisión y velocidad. Ideal para trazabilidad en plásticos, metales, electrónicos y empaques. Integración directa en líneas automatizadas.</p>
+    <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
+  </div>
+</div>
+
+
+
+ <!-- Máquina 3: TIJ High Resolution Inkjet Printer -->
+<div class="row align-items-center my-5 fade-in fade-delay-3">
+  <!-- Carrusel de imágenes -->
+  <div class="col-6">
+    <div id="carouselTIJ" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'tij2.jpg' %}" class="d-block w-100 rounded" alt="TIJ High Resolution Inkjet Printer">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaser" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaser" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+        <div class="carousel-item">
+          <img src="{% static 'muestra_tij.png' %}" class="d-block w-100 rounded" alt="TIJ Inkjet Printer vista lateral">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'muestra_tij2.jpg' %}" class="d-block w-100 rounded" alt="TIJ Inkjet Printer vista lateral">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'muestra_tij3.jpg' %}" class="d-block w-100 rounded" alt="TIJ Inkjet Printer vista lateral">
+        </div>
       </div>
-    </div>
-    <div class="col-6">
-      <h4>Láser FiberJet X20</h4>
-      <p>Equipo de codificación por láser de fibra para marcaje permanente sin consumibles. Precisión en líneas automatizadas con mínimo mantenimiento.</p>
-      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTIJ" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTIJ" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
   </div>
+
+  <!-- Información técnica -->
+  <div class="col-6">
+    <h4>TIJ High Resolution Inkjet Printer</h4>
+    <p>Impresora de inyección térmica con alta resolución para marcaje preciso en líneas de baja y media velocidad. Tecnología sin mantenimiento y fácil instalación.</p>
+    <p><strong>Referencia técnica:</strong> Tecnología TIJ (Thermal Inkjet) con cartuchos de tinta de alta definición. Ideal para impresión de textos, códigos QR, fechas de vencimiento y lotes en cajas, etiquetas y empaques porosos o no porosos.</p>
+    <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
+  </div>
+</div>
+
 </section>
 
  

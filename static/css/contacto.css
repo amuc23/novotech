@@ -43,8 +43,10 @@ body {
 
 /* Imagen decorativa */
 .contact-image {
-  max-height: 180px;
-  margin-bottom: 20px;
+  max-height: 320px !important;
+  width: auto !important;
+  display: block;
+  margin: 0 auto 30px;
 }
 
 /* Íconos redes sociales */

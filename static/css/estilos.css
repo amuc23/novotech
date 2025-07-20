@@ -101,8 +101,13 @@ header img {
 /* Logo principal del Hero más grande y con efecto */
 .logo-hero {
   max-height: 200px;
-  width: 400px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   animation: rotateOnce 1.2s ease forwards;
 }
 

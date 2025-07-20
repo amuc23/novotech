@@ -1,0 +1,163 @@
+/* Fuente y fondo base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #004d66;
+  z-index: 1000;
+  padding: 12px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-navbar {
+  height: 70px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #aadcea;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #aadcea;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Título principal */
+.titulo-principal {
+  font-size: 2rem;
+  color: #007a99;
+  font-weight: 600;
+}
+
+/* Título por categoría */
+.categoria-titulo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #007a99;
+  margin-bottom: 20px;
+  border-left: 5px solid #007a99;
+  padding-left: 15px;
+}
+
+/* Tarjetas */
+.resumen-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resumen-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.resumen-card h5 {
+  color: #004d66;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resumen-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.resumen-card ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.resumen-card li {
+  margin-bottom: 5px;
+}
+
+/* Botón */
+.btn-outline-primary {
+  border: 2px solid #007a99;
+  color: #007a99;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007a99;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #004d66;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Animación */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 1.6rem;
+  }
+
+  .categoria-titulo {
+    font-size: 1.3rem;
+  }
+
+  .resumen-card {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Separación extra del título respecto al navbar */
+section.container {
+  margin-top: 120px; /* Puedes ajustar este valor */
+}

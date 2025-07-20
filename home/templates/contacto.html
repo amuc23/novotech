@@ -13,8 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- CSS personalizados -->
-  <link rel="stylesheet" href="{% static 'css/contacto.css' %}">
-  <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+  <!-- CSS personalizados -->
+<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+<link rel="stylesheet" href="{% static 'css/contacto.css' %}">
+
 
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -54,7 +56,9 @@
 
 <!-- Sección de contacto -->
 <section class="contact-section text-center">
-  <img src="https://images.vexels.com/media/users/3/154431/isolated/preview/1b0612bca0cd99911b17c88392db70ca-icono-de-contacto-de-soporte-al-cliente.png" alt="Ilustración contacto" class="contact-image">
+  <img src="{% static 'contactanos.png' %}" alt="Ilustración contacto"
+     style="max-height: 320px; width: auto; display: block; margin: 0 auto 30px;">
+
   <h2>Contáctanos</h2>
   <p class="mb-4">Puedes comunicarte con nosotros a través de los siguientes medios:</p>
   <ul class="text-start mx-auto" style="max-width: 500px;">
