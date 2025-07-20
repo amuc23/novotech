@@ -1,8 +1,17 @@
 /* Fuente y base */
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #f4f9fc;
   color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 header {
@@ -121,6 +130,7 @@ header img {
     opacity: 1;
   }
 }
+
 /* Títulos de secciones */
 .section-title {
   font-size: 2rem;
@@ -135,9 +145,8 @@ header img {
   height: 180px;
   width: 100%;
   object-fit: contain;
-  background-color: #ffffff; /* fondo neutro para imágenes pequeñas */
+  background-color: #ffffff;
 }
-
 
 .card h3 {
   color: #004d66;
@@ -199,8 +208,8 @@ header img {
 
 /* Estilo Carruseles */
 .carousel img {
-  height: 300px;       /* O la altura que prefieras */
-  object-fit: contain;   /* Recorta manteniendo proporciones */
+  height: 300px;
+  object-fit: contain;
   width: 100%;
   border-radius: 12px;
   transition: transform 0.3s ease;
@@ -258,12 +267,13 @@ header img {
   box-shadow: 0 0 20px rgba(0, 122, 153, 0.4);
 }
 
-/* Footer */
+/* Footer fijo al fondo */
 footer {
   background-color: #004d66;
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: auto;
 }
 
 /* Responsive mínimo */
@@ -289,7 +299,6 @@ footer {
     font-size: 0.9rem;
   }
 }
-
 
 /* Sectores atendidos */
 .sector-box {
@@ -322,4 +331,3 @@ footer {
 .sector-img:hover {
   transform: scale(1.02);
 }
-
