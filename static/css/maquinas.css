@@ -23,13 +23,13 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  position: relative;
+  color: white !important;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
   padding-bottom: 4px;
   transition: color 0.3s ease;
-  position: relative;
 }
 
 .nav-links a::after {
@@ -44,7 +44,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #aadcea;
+  color: #aadcea !important;
 }
 
 .nav-links a:hover::after {

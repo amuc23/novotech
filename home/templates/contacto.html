@@ -12,11 +12,8 @@
   <!-- Fuente Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS personalizados -->
-  <!-- CSS personalizados -->
-<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
-<link rel="stylesheet" href="{% static 'css/contacto.css' %}">
-
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="{% static 'css/contacto.css' %}">
 
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -24,57 +21,45 @@
 
 <body>
 
-<!-- Navbar con efecto hover -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
   <div class="container-fluid px-4">
-    <!-- Logo -->
     <a class="navbar-brand" href="{% url 'index' %}">
       <img src="{% static 'logo.png' %}" alt="Logo Novotech" class="logo-navbar" />
     </a>
-
-    <!-- Botón hamburguesa -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Enlaces del menú -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto nav-links">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'maquinas' %}">Codificadoras/Insumos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="{% url 'contacto' %}">Contáctanos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="{% url 'quienes_somos' %}">Quiénes Somos</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'maquinas' %}">Codificadoras/Insumos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{% url 'contacto' %}">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{% url 'quienes_somos' %}">Quiénes Somos</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Sección de contacto -->
-<section class="contact-section text-center">
-  <img src="{% static 'contactanos.png' %}" alt="Ilustración contacto"
-     style="max-height: 320px; width: auto; display: block; margin: 0 auto 30px;">
-
-  <h2>Contáctanos</h2>
-  <p class="mb-4">Puedes comunicarte con nosotros a través de los siguientes medios:</p>
-  <ul class="text-start mx-auto" style="max-width: 500px;">
-    <li><i class="bi bi-envelope-fill"></i> <strong>Correo:</strong> <a href="mailto:luisurrutia@novotechspa.cl">luisurrutia@novotechspa.cl</a></li>
-    <li><i class="bi bi-telephone-fill"></i> <strong>Teléfono:</strong> +569 92260121</li>
-    <li><i class="bi bi-geo-alt-fill"></i> <strong>Dirección:</strong> Ramón Subercaseaux 1268, San Miguel</li>
-    <li><i class="bi bi-globe2"></i> <strong>Sitio web:</strong> <a href="https://www.novotechspa.cl">www.novotechspa.cl</a></li>
-  </ul>
-
-  
-</section>
+<!-- Contenido principal -->
+<main>
+  <section class="contact-section text-center">
+    <img src="{% static 'contactanos.png' %}" alt="Ilustración contacto" class="contact-image">
+    <h2>Contáctanos</h2>
+    <p class="mb-4">Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+    <ul class="text-start mx-auto contact-list">
+      <li><i class="bi bi-envelope-fill"></i> <strong>Correo:</strong> <a href="mailto:luisurrutia@novotechspa.cl">luisurrutia@novotechspa.cl</a></li>
+      <li><i class="bi bi-telephone-fill"></i> <strong>Teléfono:</strong> +569 92260121</li>
+      <li><i class="bi bi-geo-alt-fill"></i> <strong>Dirección:</strong> Ramón Subercaseaux 1268, San Miguel</li>
+      <li><i class="bi bi-globe2"></i> <strong>Sitio web:</strong> <a href="https://www.novotechspa.cl">www.novotechspa.cl</a></li>
+    </ul>
+  </section>
+</main>
 
 <!-- Footer -->
-<footer class="text-center py-4" style="background-color: #004d66; color: white;">
+<footer class="text-center py-4">
   <p class="mb-1">📍 Dirección: Ramón Subercaseaux 1268, San Miguel</p>
-  <p class="mb-1">✉️ Correo: <a href="mailto:luisurrutia@novotechspa.cl" style="color: #aadcea;">luisurrutia@novotechspa.cl</a></p>
+  <p class="mb-1">✉️ Correo: <a href="mailto:luisurrutia@novotechspa.cl">luisurrutia@novotechspa.cl</a></p>
   <p class="mb-0">© Novotech S.P.A. Todos los derechos reservados.</p>
 </footer>
 

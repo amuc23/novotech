@@ -296,11 +296,52 @@
     <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar Información</a>
   </div>
 </div>
-
 </section>
 
- 
+<!-- Demostración -->
+<section id="demostracion" class="container py-5">
+  <h2 class="section-title fade-in text-center">Demostraciones en Video</h2>
+  <div class="row justify-content-center fade-in fade-delay-1">
 
+    <!-- Card con imagen portada ajustada -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-sm border-0" role="button" data-bs-toggle="modal" data-bs-target="#modalVideo1">
+        <img src="{% static 'vistaprevia.png' %}" 
+             class="card-img-top" 
+             style="width: 100%; height: 250px; object-fit: cover;" 
+             alt="Vista previa de video">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">CIJ Printer 9000</h5>
+          <p class="card-text text-muted">Haz clic para ver demostración completa.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal del video con botón de cierre -->
+<div class="modal fade" id="modalVideo1" tabindex="-1" aria-labelledby="modalVideoLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <!-- Botón de cierre -->
+      <div class="d-flex justify-content-end p-2">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body p-0 pt-1">
+        <div class="ratio ratio-16x9">
+          <video id="videoModal1" controls class="w-100 h-100">
+            <source src="{% static 'demo.mp4' %}" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
   <!-- Footer -->
@@ -313,6 +354,16 @@
 </footer>
 <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para detener el video al cerrar -->
+<script>
+  const modal1 = document.getElementById('modalVideo1');
+  modal1.addEventListener('hidden.bs.modal', function () {
+    const video = document.getElementById('videoModal1');
+    video.pause();
+    video.currentTime = 0;
+  });
+</script>
 </body>
 
 </html>
