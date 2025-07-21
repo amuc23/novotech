@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Base estructural */
+/* Estructura base */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background-color: #f4f9fc;
   color: #333;
@@ -12,8 +13,22 @@ html, body {
   flex-direction: column;
 }
 
+/* Asegura altura flexible */
 body > main {
   flex: 1;
+}
+
+/* Imágenes 100% responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Evita desbordes */
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Navbar */
@@ -26,25 +41,15 @@ body > main {
   height: 60px;
 }
 
-/* NAV LINKS base */
+/* Nav links */
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 12px;
-  display: inline-block;
-  position: relative;
-  transition: color 0.3s;
-}
-
-.nav-links a {
-  position: relative;
   color: white !important;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
   padding-bottom: 4px;
+  display: inline-block;
+  position: relative;
   transition: color 0.3s;
 }
 
@@ -67,15 +72,16 @@ body > main {
   width: 100%;
 }
 
-/* Contacto */
+/* Sección de contacto */
 .contact-section {
   background-color: #ffffff;
   border-radius: 12px;
-  padding: 50px 30px;
+  padding: 4rem 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  max-width: 900px;
-  margin: 100px auto;
+  max-width: 960px;
+  margin: 4rem auto 2rem auto; /* ← separación con footer */
   text-align: center;
+  width: 100%;
 }
 
 .contact-image {
@@ -97,22 +103,14 @@ body > main {
 }
 
 .contact-list {
-  list-style: none;
-  padding-left: 0;
   font-size: 1.1rem;
-  max-width: 500px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contact-list li {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.contact-list li i {
-  margin-right: 10px;
-  font-size: 1.3rem;
-  color: #007a99;
+.contact-list .col-12 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Footer */
@@ -121,7 +119,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: auto;
+  margin-top: 0;
 }
 
 footer a {
@@ -133,11 +131,11 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Responsive para tablet */
 @media (max-width: 768px) {
   .contact-section {
-    padding: 30px 20px;
-    margin: 60px 15px;
+    padding: 2rem 1rem;
+    margin: 3rem 1rem 2rem 1rem;
   }
 
   .logo-navbar {
@@ -150,5 +148,27 @@ footer a:hover {
 
   .contact-image {
     max-height: 200px;
+  }
+
+  .contact-list {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 576px) {
+  .contact-section {
+    margin: 2rem auto 1.5rem auto; /* ← separación ajustada en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-list .col-12 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-list .col-12 i {
+    margin-bottom: 5px;
   }
 }
