@@ -48,130 +48,320 @@
   <h2 class="titulo-principal text-center mb-5">Codificadoras / Insumos</h2>
 
   <!-- === CIJ === -->
-  <h3 class="categoria-titulo">CIJ - Inkjet Continuo</h3>
-  <div class="row g-4 mb-5">
-    {% comment %} 4 modelos CIJ {% endcomment %}
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'Cij1.jpg' %}" alt="CIJ 9000" class="img-fluid rounded mb-3"/>
-        <h5>CIJ 9000 Series</h5>
-        <p>Impresión sin contacto para líneas rápidas.</p>
-        <ul class="list-unstyled small"><li>🧴 Tinta solvente</li><li>🧼 Disolvente</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+<h3 class="categoria-titulo">CIJ - Inkjet Continuo</h3>
+<div class="row g-4 mb-5">
+
+  
+  <!-- V150 Plus -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselV150" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'v150.png' %}" class="d-block w-100" alt="V150 Plus">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Muestra v150.png' %}" class="d-block w-100" alt="Muestra V150">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselV150" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselV150" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/cij_e30.jpg' %}" alt="CIJ E30" class="img-fluid rounded mb-3"/>
-        <h5>CIJ E30 Compact</h5>
-        <p>Ideal para pequeñas producciones.</p>
-        <ul class="list-unstyled small"><li>🔧 Boquilla precisa</li><li>🧴 Tinta base agua</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/cij_pro.jpg' %}" alt="CIJ Pro" class="img-fluid rounded mb-3"/>
-        <h5>CIJ Pro 3500</h5>
-        <p>Alta resolución y múltiples líneas.</p>
-        <ul class="list-unstyled small"><li>🧴 Tinta pigmentada</li><li>💨 Enfriamiento interno</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/cij_touch.jpg' %}" alt="CIJ Touch" class="img-fluid rounded mb-3"/>
-        <h5>CIJ Touch Series</h5>
-        <p>Interfaz táctil intuitiva y limpieza automática.</p>
-        <ul class="list-unstyled small"><li>🖥️ Pantalla touch</li><li>🧼 Auto limpieza</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
+      <h5>Leadjet V150 Plus</h5>
+      <p>Alta resolución para líneas exigentes.</p>
+      <ul class="list-unstyled small"><li>🖨️ Impresión térmica TIJ</li><li>⚙️ Pantalla táctil 7”</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
     </div>
   </div>
 
-  <!-- === LÁSER === -->
-  <h3 class="categoria-titulo">Láser de Fibra</h3>
-  <div class="row g-4 mb-5">
-    {% comment %} 4 modelos Láser {% endcomment %}
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/laser_flying.jpg' %}" alt="Laser Flying" class="img-fluid rounded mb-3"/>
-        <h5>Laser Flying</h5>
-        <p>Marcado permanente en línea sin consumibles.</p>
-        <ul class="list-unstyled small"><li>🚫 Sin consumibles</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+  <!-- CIJ 8850 -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselV8850" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'v8850.jpg' %}" class="d-block w-100" alt="CIJ 8850">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Muestra.png' %}" class="d-block w-100" alt="Muestra V8850">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselV8850" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselV8850" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/laser_pro_30w.jpg' %}" alt="Laser Pro 30W" class="img-fluid rounded mb-3"/>
-        <h5>Laser Pro 30W</h5>
-        <p>Equipo compacto para metales y plásticos.</p>
-        <ul class="list-unstyled small"><li>⚡ 30W</li><li>📦 Maleta portátil</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/laser_split.jpg' %}" alt="Laser Split" class="img-fluid rounded mb-3"/>
-        <h5>Laser Split Type</h5>
-        <p>Separación entre láser y controlador para espacios reducidos.</p>
-        <ul class="list-unstyled small"><li>📐 Diseño modular</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/laser_desktop.jpg' %}" alt="Laser Desktop" class="img-fluid rounded mb-3"/>
-        <h5>Laser Desktop</h5>
-        <p>Perfecto para oficinas técnicas y laboratorios.</p>
-        <ul class="list-unstyled small"><li>🖥️ Carcasa cerrada</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
+      <h5>Leadjet CIJ 8850</h5>
+      <p>Codificación continua confiable para entornos exigentes.</p>
+      <ul class="list-unstyled small"><li>🧴 Tinta de secado rápido</li><li>📊 Interfaz amigable</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
     </div>
   </div>
 
-  <!-- === TIJ === -->
-  <h3 class="categoria-titulo">TIJ - Inkjet Térmico</h3>
-  <div class="row g-4 mb-5">
-    {% comment %} 4 modelos TIJ {% endcomment %}
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/tij_hd.jpg' %}" alt="TIJ HD" class="img-fluid rounded mb-3"/>
-        <h5>TIJ High Resolution</h5>
-        <p>Impresión clara en cartón y etiquetas.</p>
-        <ul class="list-unstyled small"><li>🖋️ Tinta negra/roja</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+  <!-- S6610 -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselS6610" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 's6610.jpg' %}" class="d-block w-100" alt="S6610">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Muestra S6610.png' %}" class="d-block w-100" alt="Muestra S6610">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselS6610" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselS6610" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/tij_hp_25.jpg' %}" alt="TIJ HP 2.5" class="img-fluid rounded mb-3"/>
-        <h5>HP TIJ 2.5</h5>
-        <p>Tecnología HP sin mantenimiento.</p>
-        <ul class="list-unstyled small"><li>🖨️ Cartucho original</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/tij_wide.jpg' %}" alt="TIJ Wide" class="img-fluid rounded mb-3"/>
-        <h5>TIJ Wide Print</h5>
-        <p>Impresión más ancha para cajas grandes.</p>
-        <ul class="list-unstyled small"><li>📏 Cabezal 25.4mm</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/tij_color.jpg' %}" alt="TIJ Color" class="img-fluid rounded mb-3"/>
-        <h5>TIJ Color Print</h5>
-        <p>Impresión de logos y marcas a color.</p>
-        <ul class="list-unstyled small"><li>🟥🟩🟦 Cartuchos color</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
+      <h5>Leadjet S6610</h5>
+      <p>Impresora CIJ versátil para alta productividad industrial.</p>
+      <ul class="list-unstyled small"><li>🖨️ Impresión sin contacto</li><li>🧠 Sistema inteligente de limpieza</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
     </div>
   </div>
+
+  <!-- V8860 -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselV8860" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'v8860.jpg' %}" class="d-block w-100" alt="V8860">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Muestra v8860.png' %}" class="d-block w-100" alt="Muestra V8860">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselV8860" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselV8860" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>Leadjet V8860</h5>
+      <p>Impresora CIJ avanzada con pantalla táctil y alta precisión.</p>
+      <ul class="list-unstyled small"><li>📱 Pantalla touch HD</li><li>🧴 Tinta pigmentada o estándar</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- V8860P White -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselV8860P" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'V8860P White Ink.jpg' %}" class="d-block w-100" alt="V8860P White">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'Muestra v8860 white.png' %}" class="d-block w-100" alt="Muestra V8860P">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselV8860P" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselV8860P" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>Leadjet V8860P White</h5>
+      <p>Impresora CIJ con tinta blanca para superficies oscuras.</p>
+      <ul class="list-unstyled small"><li>🧪 Tinta blanca pigmentada</li><li>⚙️ Ideal para cables, botellas y plásticos</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+  <!-- === LÁSER LEADJET === -->
+<h3 class="categoria-titulo">Láser de Fibra</h3>
+<div class="row g-4 mb-5">
+
+  <!-- CO2 Laser -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselLaserCO2" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'laser co2.jpg' %}" class="d-block w-100" alt="CO2 Laser">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'laser co2 muestra.png' %}" class="d-block w-100" alt="Muestra CO2 Laser">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaserCO2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaserCO2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>CO₂ Laser Marking</h5>
+      <p>Marcado láser rápido ideal para materiales no metálicos.</p>
+      <ul class="list-unstyled small"><li>🔦 Alta velocidad</li><li>🪵 Papel, madera, cartón</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- Flying Fiber Laser -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselLaserFlying" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'laser fibra.jpg' %}" class="d-block w-100" alt="Flying Fiber Laser">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'laser fibra muestra.png' %}" class="d-block w-100" alt="Muestra Flying">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaserFlying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaserFlying" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>Fiber Laser Flying</h5>
+      <p>Marcado láser en línea para producción continua.</p>
+      <ul class="list-unstyled small"><li>🚫 Sin consumibles</li><li>⚡ Alta precisión</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- UV Laser -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselLaserUV" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'uv laser.jpg' %}" class="d-block w-100" alt="UV Laser">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'uv laser.png' %}" class="d-block w-100" alt="Muestra UV Laser">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaserUV" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaserUV" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>UV Laser Marking</h5>
+      <p>Ideal para marcado en plástico, vidrio y materiales sensibles.</p>
+      <ul class="list-unstyled small"><li>❄️ Baja temperatura</li><li>🧪 Alta definición</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- Desktop Fiber Laser -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselLaserDesk" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'escritorio laser.png' %}" class="d-block w-100" alt="Desktop Laser">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'escritorio laser muestra.png' %}" class="d-block w-100" alt="Muestra Desktop">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLaserDesk" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLaserDesk" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>Fiber Laser Desktop</h5>
+      <p>Diseño de escritorio para grabado técnico en laboratorios.</p>
+      <ul class="list-unstyled small"><li>🖥️ Carcasa cerrada</li><li>📐 Alta precisión</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- === TIJ - Inkjet Térmico === -->
+<h3 class="categoria-titulo">TIJ - Inkjet Térmico</h3>
+<div class="row g-4 mb-5">
+
+  <!-- S300 Handheld Inkjet -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselS300" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 's300.png' %}" class="d-block w-100" alt="S300 Handheld Inkjet">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'muestra s300.png' %}" class="d-block w-100" alt="Muestra S300">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselS300" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselS300" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>S300 Handheld Inkjet</h5>
+      <p>Impresora de mano versátil con pantalla táctil integrada.</p>
+      <ul class="list-unstyled small">
+        <li>🖐️ Impresión portátil</li>
+        <li>📱 Pantalla táctil 5”</li>
+      </ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- TIJ High Resolution Inkjet -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselTIJHighRes" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'tij printer.png' %}" class="d-block w-100" alt="TIJ High Resolution">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'tij printer muestra.png' %}" class="d-block w-100" alt="Muestra TIJ High Resolution">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTIJHighRes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTIJHighRes" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>TIJ High Resolution</h5>
+      <p>Impresora compacta con cabezal TIJ para alta definición.</p>
+      <ul class="list-unstyled small">
+        <li>🖨️ Resolución hasta 600 dpi</li>
+        <li>💡 Bajo mantenimiento</li>
+      </ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+</div>
+
 
   <!-- === ACCESORIOS === -->
   <h3 class="categoria-titulo">Accesorios y Complementos</h3>
