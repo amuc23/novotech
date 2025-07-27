@@ -313,7 +313,7 @@
         <img src="{% static 'vistaprevia.png' %}" class="card-img-top"
              style="width: 100%; height: 250px; object-fit: cover;" alt="Vista previa 1">
         <div class="card-body text-center">
-          <h5 class="card-title text-primary">CIJ Printer 9000</h5>
+          <h5 class="card-title text-primary">CIJ Demo</h5>
           <p class="card-text text-muted">Haz clic para ver demostración completa.</p>
         </div>
       </div>
@@ -329,7 +329,7 @@
         <img src="{% static 'vistaprevia.png' %}" class="card-img-top"
              style="width: 100%; height: 250px; object-fit: cover;" alt="Vista previa 2">
         <div class="card-body text-center">
-          <h5 class="card-title text-primary">Láser Flying Marker</h5>
+          <h5 class="card-title text-primary">Láser Demo</h5>
           <p class="card-text text-muted">Haz clic para ver demostración completa.</p>
         </div>
       </div>
@@ -345,7 +345,23 @@
         <img src="{% static 'vistaprevia.png' %}" class="card-img-top"
              style="width: 100%; height: 250px; object-fit: cover;" alt="Vista previa 3">
         <div class="card-body text-center">
-          <h5 class="card-title text-primary">TIJ HP 2.5 Series</h5>
+          <h5 class="card-title text-primary">TIJ Demo</h5>
+          <p class="card-text text-muted">Haz clic para ver demostración completa.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card shadow-sm border-0" role="button"
+           data-bs-toggle="modal"
+           data-bs-target="#videoModal"
+           data-video="{% static 'demo3.mp4' %}"
+           data-title="TIJ HP 2.5 Series">
+        <img src="{% static 'vistaprevia.png' %}" class="card-img-top"
+             style="width: 100%; height: 250px; object-fit: cover;" alt="Vista previa 3">
+        <div class="card-body text-center">
+          <h5 class="card-title text-primary">DOD Demo</h5>
           <p class="card-text text-muted">Haz clic para ver demostración completa.</p>
         </div>
       </div>
@@ -387,21 +403,29 @@
 
     <div class="row justify-content-center align-items-start text-center g-4">
       <!-- Leadjet -->
-      <div class="col-md-6">
+      <div class="col-md-4">
         <img src="{% static 'leadjet.png' %}" alt="Leadjet Logo" class="img-fluid mb-3" style="height: 90px; object-fit: contain;">
         <h5 class="fw-bold text-primary">Leadjet</h5>
         <p class="small text-muted">Marca reconocida internacionalmente en codificación CIJ. Su alianza con Novotech permite entregar soluciones rápidas, duraderas y eficientes.</p>
       </div>
 
       <!-- HSA Systems -->
-      <div class="col-md-6">
+      <div class="col-md-4">
         <img src="{% static 'hsa.png' %}" alt="HSA Systems Logo" class="img-fluid mb-3" style="height: 90px; object-fit: contain;">
         <h5 class="fw-bold text-primary">HSA Systems</h5>
         <p class="small text-muted">Especialistas en impresión térmica TIJ. Junto a Novotech, garantizan precisión y rendimiento en entornos industriales exigentes.</p>
       </div>
+
+      <!-- Labelpack Italy -->
+      <div class="col-md-4">
+        <img src="{% static 'labelpack.jpg' %}" alt="Labelpack Logo" class="img-fluid mb-3" style="height: 90px; object-fit: contain;">
+        <h5 class="fw-bold text-primary">Labelpack Italy</h5>
+        <p class="small text-muted">Fabricantes italianos de sistemas de etiquetado industrial. Su tecnología asegura aplicaciones precisas y eficientes para líneas automatizadas.</p>
+      </div>
     </div>
   </div>
 </section>
+
 
 
 

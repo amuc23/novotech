@@ -184,6 +184,36 @@
 
 </div>
 
+<!-- === DOD - Gota a Demanda === -->
+<h3 class="categoria-titulo">DOD - Macro Impresion</h3>
+<div class="row g-4 mb-5">
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselDOD" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'dod.png' %}" class="d-block w-100" alt="Impresora DOD 1">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'muestra dod.png' %}" class="d-block w-100" alt="Impresora DOD 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDOD" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDOD" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>Impresora DOD Industrial</h5>
+      <p>Marcado por gotas grandes para superficies porosas y no porosas.</p>
+      <ul class="list-unstyled small"><li>💧 Tinta de alta viscosidad</li><li>🧱 Impresión en madera, sacos, cajas</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -360,52 +390,147 @@
     </div>
   </div>
 
+    <!-- MiniTouch -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselMiniTouch" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'mini touch.png' %}" class="d-block w-100" alt="HSA MiniTouch">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'muestra mini.png' %}" class="d-block w-100" alt="Pantalla MiniTouch">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMiniTouch" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMiniTouch" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>MiniTouch HSA</h5>
+      <p>Controlador TIJ con pantalla táctil de 5.7".</p>
+      <ul class="list-unstyled small"><li>📱 Interfaz gráfica intuitiva</li><li>🖨️ Compatible con cabezales HP</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- MiniKey -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselMiniKey" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'minikey.jpg' %}" class="d-block w-100" alt="HSA MiniKey">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'muestra minikey.jpg' %}" class="d-block w-100" alt="Teclado MiniKey">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMiniKey" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMiniKey" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h5>MiniKey HSA</h5>
+      <p>Impresora TIJ con teclado físico integrado.</p>
+      <ul class="list-unstyled small"><li>⌨️ Control sin PC</li><li>🖋️ Codificación rápida y sencilla</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+
 </div>
 
 
-  <!-- === ACCESORIOS === -->
-  <h3 class="categoria-titulo">Accesorios y Complementos</h3>
-  <div class="row g-4 mb-5">
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/tto.jpg' %}" alt="TTO Printer" class="img-fluid rounded mb-3"/>
-        <h5>Impresora TTO</h5>
-        <p>Transferencia térmica para empaques flexibles.</p>
-        <ul class="list-unstyled small"><li>🧵 Ribbon térmico</li><li>📦 Para flowpack</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
+  <!-- === IMPRESORAS DE ETIQUETAS === -->
+<h3 class="categoria-titulo">Impresoras de Etiquetas</h3>
+<div class="row g-4 mb-5">
 
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/consumibles.jpg' %}" alt="Consumibles" class="img-fluid rounded mb-3"/>
-        <h5>Consumibles</h5>
-        <p>Tintas, cartuchos, ribbons para todas las tecnologías.</p>
-        <ul class="list-unstyled small"><li>🧴 Tintas CIJ y TIJ</li><li>🖋️ Cartuchos HP</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Cotizar</a>
+  <!-- TTO -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <div id="carouselTTO" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="{% static 'tto.png' %}" class="d-block w-100" alt="TTO Printer">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'tto muestra.png' %}" class="d-block w-100" alt="Muestra TTO 1">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTTO" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTTO" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-    </div>
 
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/repuestos.jpg' %}" alt="Repuestos" class="img-fluid rounded mb-3"/>
-        <h5>Repuestos</h5>
-        <p>Boquillas, filtros, fuentes y piezas técnicas.</p>
-        <ul class="list-unstyled small"><li>⚙️ Compatibles</li><li>🛠️ Garantía</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="resumen-card p-4 text-center h-100">
-        <img src="{% static 'img/aplicadora.jpg' %}" alt="Aplicadora" class="img-fluid rounded mb-3"/>
-        <h5>Aplicadoras de Etiquetas</h5>
-        <p>Aplicado automático en línea de producción.</p>
-        <ul class="list-unstyled small"><li>🏷️ Etiquetas adhesivas</li><li>🔁 Integración codificadoras</li></ul>
-        <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
-      </div>
+      <h5>Impresora TTO</h5>
+      <p>Transferencia térmica para empaques flexibles.</p>
+      <ul class="list-unstyled small"><li>🧵 Ribbon térmico</li><li>📦 Para flowpack</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
     </div>
   </div>
+<!-- Impresora de Etiquetas -->
+<div class="col-md-4 col-lg-3">
+  <div class="resumen-card p-4 text-center h-100">
+    <img src="{% static 'impresora.png' %}" class="img-fluid rounded mb-3" alt="Impresora de Etiquetas">
+    <h5>Impresora de Etiquetas Escritorio</h5>
+    <p>Ideal para códigos de barras, precios y trazabilidad.</p>
+    <ul class="list-unstyled small">
+      <li>🏷️ Etiquetas adhesivas</li>
+      <li>🖨️ Térmica directa o transferencia</li>
+    </ul>
+    <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+  </div>
+</div>
+
+  <!-- Aplicadora de Etiquetas -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <img src="{% static 'aplicadora etiquetas.jpg' %}" alt="Aplicadora" class="img-fluid rounded mb-3"/>
+      <h5>Aplicadoras de Etiquetas</h5>
+      <p>Aplicado automático en línea de producción.</p>
+      <ul class="list-unstyled small"><li>🏷️ Etiquetas adhesivas</li><li>🔁 Integración codificadoras</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- === CONSUMIBLES Y REPUESTOS === -->
+<h3 class="categoria-titulo">Consumibles y Repuestos</h3>
+<div class="row g-4 mb-5">
+
+  <!-- Consumibles -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <img src="{% static 'consumibles.png' %}" alt="Consumibles" class="img-fluid rounded mb-3"/>
+      <h5>Consumibles</h5>
+      <p>Tintas, cartuchos, ribbons para todas las tecnologías.</p>
+      <ul class="list-unstyled small"><li>🧴 Tintas CIJ y TIJ</li><li>🖋️ Cartuchos HP</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+  <!-- Repuestos -->
+  <div class="col-md-4 col-lg-3">
+    <div class="resumen-card p-4 text-center h-100">
+      <img src="{% static 'repuestos.png' %}" alt="Repuestos" class="img-fluid rounded mb-3"/>
+      <h5>Repuestos</h5>
+      <p>Boquillas, filtros, fuentes y piezas técnicas.</p>
+      <ul class="list-unstyled small"><li>⚙️ Compatibles</li><li>🛠️ Garantía</li></ul>
+      <a href="{% url 'contacto' %}" class="btn btn-outline-primary mt-2">Solicitar</a>
+    </div>
+  </div>
+
+</div>
+
 </section>
 
 <!-- FOOTER -->
