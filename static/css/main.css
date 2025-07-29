@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Estructura base */
+/* Fuente y estructura base */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background-color: #f4f9fc;
   color: #333;
@@ -13,43 +12,39 @@ html, body {
   flex-direction: column;
 }
 
-/* Asegura altura flexible */
-body > main {
+main {
   flex: 1;
 }
 
-/* Imágenes 100% responsivas */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Evita desbordes */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* Navbar */
+/* Navbar moderno */
 .navbar-custom {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #004d66;
+  z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 12px 0;
+}
+
+.navbar-custom .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .logo-navbar {
-  height: 60px;
+  height: 70px;
 }
 
-/* Nav links */
+/* Links de navegación */
 .nav-links a {
-  color: white !important;
+  color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  padding-bottom: 4px;
-  display: inline-block;
   position: relative;
+  padding-bottom: 4px;
   transition: color 0.3s;
 }
 
@@ -65,21 +60,21 @@ img {
 }
 
 .nav-links a:hover {
-  color: #aadcea !important;
+  color: #aadcea;
 }
 
 .nav-links a:hover::after {
   width: 100%;
 }
 
-/* Sección de contacto */
+/* Contenido de contacto */
 .contact-section {
   background-color: #ffffff;
   border-radius: 12px;
   padding: 4rem 2rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
   max-width: 960px;
-  margin: 4rem auto 2rem auto; /* ← separación con footer */
+  margin: 140px auto 2rem auto;
   text-align: center;
   width: 100%;
 }
@@ -119,7 +114,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 0;
+  margin-top: auto;
 }
 
 footer a {
@@ -131,23 +126,23 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive para tablet */
+/* Responsive */
 @media (max-width: 768px) {
+  .logo-navbar {
+    height: 55px;
+  }
+
   .contact-section {
     padding: 2rem 1rem;
-    margin: 3rem 1rem 2rem 1rem;
-  }
-
-  .logo-navbar {
-    height: 50px;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
+    margin: 120px 1rem 2rem 1rem;
   }
 
   .contact-image {
     max-height: 200px;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
   }
 
   .contact-list {
@@ -155,10 +150,9 @@ footer a:hover {
   }
 }
 
-/* Responsive para móviles pequeños */
 @media (max-width: 576px) {
   .contact-section {
-    margin: 2rem auto 1.5rem auto; /* ← separación ajustada en móviles */
+    margin: 100px auto 1.5rem auto;
   }
 }
 
